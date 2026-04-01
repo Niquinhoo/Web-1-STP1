@@ -4,3 +4,6 @@ dist/
 .env
 *.md
 .codex
+stitch/
+agentic/
+agentic-styles/
