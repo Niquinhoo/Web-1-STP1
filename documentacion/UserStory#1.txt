@@ -2,7 +2,8 @@
 
 ***Nombre:** Generar estructura del Proyecto*
 
-Generé la estructura propuesta de proyecto de la siguiente manera. Voy a reutilizar mi trabajo practico de Diseño Web que tenia las mismas pautas que tiene este trabajo numero 1
+Generé la estructura propuesta de proyecto de la siguiente manera.
+Voy a reutilizar mi trabajo practico de Diseño Web que tenia las mismas pautas que tiene este trabajo numero 1
 Con la ayuda de la documentacion que se brindó y la ayuda de un Agente (Plan: Claude Opus | Implementado: Codex) logré la siguiente estructura (Dejo Logs de consola en la seccion final):
 Aca esta el repositorio original: https://github.com/Niquinhoo/ecommerce-dw2025/tree/main
 Rama modificada a AtomicDesign (tiene un readme con reglas que aplicó y limitaciones que se encontró): https://github.com/Niquinhoo/ecommerce-dw2025/tree/AtomicDesign
