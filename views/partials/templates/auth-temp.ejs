@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= locals.pageTitle || 'Bienvenido a Pediloo' %></title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/templates/auth-layout.css">
+</head>
+<body class="auth-template">
+    
+    <%- include('../header.ejs') %>
+    
+    <main class="t-auth-container">
+        <section class="auth-wrapper">
+            <%- include(locals.authMolecule, locals.authProps) %>
+        </section>
+    </main>
+
+    <%- include('../footer.ejs') %>
+
+</body>
+</html>

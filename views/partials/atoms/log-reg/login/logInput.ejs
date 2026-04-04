@@ -1,0 +1,16 @@
+<%# 
+  Parámetros:
+  - type: 'text', 'password', 'email'
+  - name: el nombre que recibirá el backend (ej: "email", "password")
+  - placeholder: el texto de ayuda dentro del input
+  - value: (opcional) por si quieres precargar datos
+%>
+
+<input type="<%= locals.type || 'text' %>"
+       class="log-reg-input"
+       placeholder="<%= locals.placeholder || 'Usuario' %>"
+       name="<%= locals.name || 'usuario' %>"
+       value="<%= locals.value || '' %>"
+       required
+>
+

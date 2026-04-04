@@ -19,9 +19,12 @@ app.use('/styles', express.static('./styles'));
 // Servimos la carpeta 'assets' para que las imágenes puedan cargar
 app.use('/assets', express.static('./assets'));
 
+// Middleware para procesar datos de formularios (POST)
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+
 // --- IMPORTACIÓN DE RUTAS ---
 const indexRouter = require('./routes/index');
-const homeRouter = require('./routes/home');
 const loginRouter = require('./routes/login');
 const registerRouter = require('./routes/register');
 const cartRouter = require('./routes/cart');
@@ -35,8 +38,11 @@ const productosRouter = require('./routes/productos');
 app.use('/', indexRouter);
 
 // Rutas de Atomic Design
-app.use('/home', homeRouter);
+app.use('/index', indexRouter);
+
+// Ruta de Iniciar Sesión (Login) - Maneja el acceso de usuarios
 app.use('/login', loginRouter);
+
 app.use('/register', registerRouter);
 app.use('/cart', cartRouter);
 app.use('/checkout', checkoutRouter);
@@ -45,9 +51,15 @@ app.use('/account', accountRouter);
 // Rutas de Productos
 app.use('/producto', productosRouter);
 
+// Fallback: Redirige cualquier ruta no definida (404) a la página de Login
+app.use((req, res) => {
+    console.log(`Ruta no encontrada: ${req.originalUrl}. Redirigiendo a /login`);
+    res.redirect('/login');
+});
 
 // --- INICIO DEL SERVIDOR ---
 // Ponemos a escuchar a la aplicación en el puerto asignado
 app.listen(PORT, () => {
     console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
+

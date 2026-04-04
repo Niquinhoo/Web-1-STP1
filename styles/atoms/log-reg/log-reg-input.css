@@ -1,0 +1,22 @@
+.log-reg-input {
+    width: 100%;
+    padding: 12px 18px;
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    background-color: #f8f8f8; 
+    border: 1px solid var(--border-color); 
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.log-reg-input:focus {
+    border-color: var(--brand-green); 
+    background-color: var(--white);
+    box-shadow: 0 0 0 4px rgba(33, 181, 148, 0.1); 
+}
+
+.log-reg-input::placeholder {
+    color: #999;
+}
+

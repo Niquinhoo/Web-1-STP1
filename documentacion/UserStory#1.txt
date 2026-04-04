@@ -24,69 +24,53 @@ Rama modificada a AtomicDesign (tiene un readme con reglas que aplicó y limitac
             -product-page.ejs
         -register:
             -register-page.ejs
-
     -partials:
         -atoms:
-            -breadcrumb-link.ejs
-            -breadcrumb-separator.ejs
-            -category-button.ejs
-            -email-field.ejs
-            -icon-cart.ejs
-            -logo.ejs
-            -password-field.ejs
-            -price-label.ejs
-            -primary-button.ejs
-            -quantity-button.ejs
-            -search-input.ejs
-            -secondary-button.ejs
-            -section-title.ejs
-            -social-icon-link.ejs
-            -text-field.ejs
-            -user-avatar.ejs
+            -atom-assets:
+                -logo.ejs
+            -log-reg:
+                -login:
+                    -logButton.ejs
+                    -logInput.ejs
+                    -logLink.ejs
+                -register:
+                    -regButton.ejs
+                    -regInput.ejs
+                    -regLink.ejs
         -molecules:
-            -account-info-row.ejs
-            -auth-form-fields.ejs
-            -auth-switch-link.ejs
-            -banner-card.ejs
-            -breadcrumb-trail.ejs
-            -cart-item-counter.ejs
-            -cart-item-info.ejs
-            -checkout-total-row.ejs
-            -product-card.ejs
-            -related-product-card.ejs
-            -search-bar.ejs
-            -sidebar-link-list.ejs
-            -social-links.ejs
+            -login:
+                -logModal.ejs
+            -register:
+                -regModal.ejs
         -organisms:
-            -account-info-panel.ejs
-            -account-sidebar.ejs
-            -ads-banner-section.ejs
-            -auth-card.ejs
-            -cart-items-list.ejs
-            -cart-summary-box.ejs
-            -category-nav.ejs
-            -checkout-summary-card.ejs
-            -featured-products-grid.ejs
-            -product-detail-hero.ejs
-            -purchase-history-table.ejs
-            -related-products-section.ejs
-            -site-footer.ejs
-            -site-header.ejs
-            -upcoming-products-grid.ejs
+            -auth-org.ejs
         -templates:
-            -account-template.ejs
-            -auth-template.ejs
-            -cart-template.ejs
-            -checkout-template.ejs
-            -product-detail-template.ejs
-            -storefront-template.ejs
+            -auth-temp.ejs
         footer.ejs
         header.ejs
         sideBar.ejs
     index.ejs
 -styles:
-
-
+    -atoms:
+        -log-reg:
+            -log-reg-button.css
+            -log-reg-input.css
+            -log-reg-link.css
+        logo.css
+    -base:
+        -reset.css
+        -variables.css
+        -typography.css
+    -molecules:
+        -form-field.css
+        -social-group.css
+    -organisms:
+        -auth-card.css
+        -header.css
+        -footer.css
+    -templates:
+        -auth-layout.css
+    main.css
 
 log consola:
 PS C:\Users\nicot\Desktop\Web-1-STP1> dir

@@ -1,0 +1,25 @@
+.logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px; /* Adjust based on header height */
+    overflow: hidden;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+}
+
+.logo img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+
+.logo:active {
+    transform: scale(0.95);
+}

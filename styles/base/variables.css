@@ -1,0 +1,11 @@
+:root {
+    --brand-green: #21b594;
+    --brand-green-hover: #1a9c7d;
+    --brand-dark: #2d2d2d;
+    --bg-light: #f8f9fa;
+    --text-primary: #1a1a1a;
+    --text-secondary: #555;
+    --white: #fff;
+    --border-color: #e0e0e0;
+    --shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}

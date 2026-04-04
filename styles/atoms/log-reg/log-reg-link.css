@@ -1,0 +1,18 @@
+.log-reg-nav {
+    font-size: 0.85rem;
+    color: #555;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.log-reg-link {
+    color: #2d2d2d; 
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.log-reg-link:hover {
+    color: var(--brand-green, #21b594); 
+    text-decoration: underline;
+}

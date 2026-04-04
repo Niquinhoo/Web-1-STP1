@@ -1,0 +1,13 @@
+<%- include('../../partials/templates/auth-temp.ejs', { 
+    pageTitle: 'Log In - Pediloo',
+    authMolecule: '../../partials/molecules/login/logModal.ejs',
+    authProps: {
+        isRegister: false,
+        title: '¡Bienvenido!',
+        action: '/login',
+        btnText: 'Iniciar Sesión',
+        navMessage: '¿No tienes cuenta?',
+        navLinkText: 'Regístrate aquí',
+        navUrl: '/register'
+    }
+}) %>
