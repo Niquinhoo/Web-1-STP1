@@ -1,0 +1,6 @@
+.product-price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--brand-green);
+    font-family: 'Outfit', sans-serif;
+}

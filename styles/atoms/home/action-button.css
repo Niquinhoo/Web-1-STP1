@@ -1,0 +1,22 @@
+.action-button {
+    background: var(--brand-dark);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    font-family: 'Inter', sans-serif;
+}
+
+.action-button:hover {
+    box-shadow: 0 10px 15px -3px rgba(45, 45, 45, 0.4);
+    transform: translateY(-2px);
+}
+
+
+.action-button:active {
+    transform: translateY(0);
+}

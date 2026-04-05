@@ -1,0 +1,24 @@
+<nav class="navbar">
+    <div class="navbar-container">
+        <a href="/home" class="navbar-logo">
+            <span class="logo-icon">🍔</span>
+            <span class="logo-text">Pediloo</span>
+        </a>
+        
+        <%- include('../../molecules/home/search-bar') %>
+        
+        <div class="navbar-actions">
+            <%- include('../../molecules/home/nav-item', { 
+                link: '/cart', 
+                icon: '🛒', 
+                label: 'Carrito', 
+                badge: '3' 
+            }) %>
+            <%- include('../../molecules/home/nav-item', { 
+                link: '/login', 
+                icon: '👤', 
+                label: 'Mi Cuenta' 
+            }) %>
+        </div>
+    </div>
+</nav>

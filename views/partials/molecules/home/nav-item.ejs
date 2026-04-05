@@ -1,0 +1,9 @@
+<a href="<%= link %>" class="nav-item">
+    <div class="nav-item-icon-wrapper">
+        <i class="nav-item-icon"><%= icon %></i>
+        <% if (locals.badge) { %>
+            <span class="nav-item-badge"><%= badge %></span>
+        <% } %>
+    </div>
+    <span class="nav-item-label"><%= label %></span>
+</a>

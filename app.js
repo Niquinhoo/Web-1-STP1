@@ -39,6 +39,7 @@ app.use('/', indexRouter);
 
 // Rutas de Atomic Design
 app.use('/index', indexRouter);
+app.use('/home', indexRouter);
 
 // Ruta de Iniciar Sesión (Login) - Maneja el acceso de usuarios
 app.use('/login', loginRouter);

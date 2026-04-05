@@ -1,0 +1,7 @@
+<section class="ad-banner" style="background-image: url('<%= banner.image %>')">
+    <div class="ad-banner-overlay">
+        <h2 class="ad-banner-title"><%= banner.title %></h2>
+        <p class="ad-banner-description"><%= banner.description %></p>
+        <%- include('../../atoms/home/action-button', { text: banner.buttonText || 'Ver más', classList: 'btn-lg' }) %>
+    </div>
+</section>

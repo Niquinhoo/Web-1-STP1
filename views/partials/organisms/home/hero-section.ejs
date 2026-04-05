@@ -1,0 +1,7 @@
+<article class="hero-section">
+    <div class="hero-container">
+        <% ads.forEach(ad => { %>
+            <%- include('../../molecules/home/ad-banner', { banner: ad }) %>
+        <% }) %>
+    </div>
+</article>

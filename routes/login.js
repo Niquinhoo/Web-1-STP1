@@ -9,8 +9,8 @@ router.get('/', (req, res) => {
 // Ruta POST: Maneja el inicio de sesión cuando se envía el formulario
 router.post('/', (req, res) => {
     console.log('Intento de Login:', req.body.email);
-    // Tras el login, redirige al inicio (o a donde prefieras)
-    res.redirect('/');
+    // Tras el login, redirige a /home
+    res.redirect('/home');
 });
 
 module.exports = router;
