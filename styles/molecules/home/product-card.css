@@ -11,6 +11,8 @@
     box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05);
     position: relative;
     overflow: hidden;
+    height: 100%;
+    min-height: 380px; /* Optional, ensures a consistent minimal size */
 }
 
 .product-card:hover {
@@ -26,7 +28,11 @@
     position: relative;
 }
 
-
+.product-card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
 
 .product-card-footer {
     display: flex;
@@ -38,4 +44,10 @@
 .btn-sm {
     padding: 8px 16px !important;
     font-size: 0.9rem !important;
+}
+
+.product-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }

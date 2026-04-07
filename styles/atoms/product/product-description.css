@@ -1,0 +1,6 @@
+.product-description {
+    font-size: var(--font-size-md, 1.125rem);
+    color: var(--color-text-secondary, #4B5563);
+    line-height: 1.6;
+    margin: 0;
+}

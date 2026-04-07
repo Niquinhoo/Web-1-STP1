@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pediloo - Detalle de Producto</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/styles/base/reset.css">
+    <link rel="stylesheet" href="/styles/base/variables.css">
+    <link rel="stylesheet" href="/styles/base/typography.css">
+    
+    <link rel="stylesheet" href="/styles/atoms/home/product-title.css">
+    <link rel="stylesheet" href="/styles/atoms/home/product-price.css">
+    <link rel="stylesheet" href="/styles/atoms/home/product-image.css">
+    <link rel="stylesheet" href="/styles/atoms/home/action-button.css">
+    <link rel="stylesheet" href="/styles/atoms/home/badge.css">
+    <link rel="stylesheet" href="/styles/atoms/home/category-icon.css">
+    <link rel="stylesheet" href="/styles/atoms/home/category-text.css">
+    <link rel="stylesheet" href="/styles/atoms/product/product-description.css">
+    <link rel="stylesheet" href="/styles/atoms/product/back-button.css">
+    
+    <link rel="stylesheet" href="/styles/molecules/home/product-card.css">
+    <link rel="stylesheet" href="/styles/molecules/home/search-bar.css">
+    <link rel="stylesheet" href="/styles/molecules/home/nav-item.css">
+    <link rel="stylesheet" href="/styles/molecules/home/category-item.css">
+    <link rel="stylesheet" href="/styles/molecules/product/product-info.css">
+    <link rel="stylesheet" href="/styles/molecules/product/product-gallery.css">
+    
+    <link rel="stylesheet" href="/styles/organisms/home/navbar.css">
+    <link rel="stylesheet" href="/styles/organisms/home/product-grid.css">
+    <link rel="stylesheet" href="/styles/organisms/home/category-bar.css">
+    <link rel="stylesheet" href="/styles/organisms/footer.css">
+    <link rel="stylesheet" href="/styles/organisms/product/product-detail.css">
+    <link rel="stylesheet" href="/styles/organisms/product/product-not-found.css">
+    
+    <link rel="stylesheet" href="/styles/templates/product-layout.css">
+</head>
+<body class="product-layout">
+    <%- include('../organisms/home/navbar') %>
+    
+    <main class="main-content">
+        <% if (locals.components) { %>
+            <% components.forEach(comp => { %>
+                <%- include(comp.path, comp.props) %>
+            <% }) %>
+        <% } %>
+    </main>
+    
+    <%- include('../organisms/footer.ejs') %>
+</body>
+</html>

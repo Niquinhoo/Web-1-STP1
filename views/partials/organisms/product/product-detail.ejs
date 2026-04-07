@@ -1,0 +1,9 @@
+<section class="product-detail-org">
+    <div class="product-detail-header">
+        <%- include('../../atoms/product/back-button', { link: '/home', text: 'Volver al Inicio' }) %>
+    </div>
+    <div class="container">
+        <%- include('../../molecules/product/product-gallery', { src: producto.src, title: producto.title }) %>
+        <%- include('../../molecules/product/product-info', { producto: producto }) %>
+    </div>
+</section>

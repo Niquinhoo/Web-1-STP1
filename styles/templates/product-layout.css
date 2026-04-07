@@ -1,0 +1,11 @@
+.product-layout {
+    background-color: var(--color-background, #F9FAFB);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-layout .main-content {
+    flex: 1;
+    padding-bottom: 3rem;
+}
