@@ -1,0 +1,1 @@
+.cart-list { display: flex; flex-direction: column; gap: 0; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin-bottom: 24px; }
