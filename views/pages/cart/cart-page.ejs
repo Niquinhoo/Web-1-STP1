@@ -1,0 +1,8 @@
+<%- include('../../partials/templates/cart-layout', {
+    components: [
+        { 
+            path: '../../partials/organisms/cart/cart-container', 
+            props: { items: cartItems, total: cartTotal } 
+        }
+    ]
+}) %>

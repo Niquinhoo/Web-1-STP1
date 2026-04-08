@@ -1,0 +1,5 @@
+<% if (locals.url) { %>
+    <a href="<%= url %>" class="action-btn action-btn-<%= kind %>"><%= label %></a>
+<% } else { %>
+    <button class="action-btn action-btn-<%= kind %>"><%= label %></button>
+<% } %>

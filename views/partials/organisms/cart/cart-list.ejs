@@ -1,0 +1,11 @@
+<div class="cart-list">
+    <% if (items && items.length > 0) { %>
+        <% items.forEach(item => { %>
+            <%- include('../../molecules/cart/cart-item', { item: item }) %>
+        <% }); %>
+    <% } else { %>
+        <div class="empty-cart-message">
+            <p>Tu carrito está vacío.</p>
+        </div>
+    <% } %>
+</div>

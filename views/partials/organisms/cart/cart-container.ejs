@@ -1,0 +1,7 @@
+<section class="cart-container-section">
+    <h1 class="cart-title">Tu Carrito</h1>
+    <div class="cart-grid">
+        <%- include('./cart-list', { items: items }) %>
+        <%- include('./cart-summary', { total: total }) %>
+    </div>
+</section>
