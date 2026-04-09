@@ -9,8 +9,8 @@ router.get('/', (req, res) => {
 // Ruta POST: Procesa los datos de registro (fallback de éxito)
 router.post('/', (req, res) => {
     console.log('Registro exitoso para:', req.body.email);
-    // Simula éxito y redirige al login para probar el flujo
-    res.redirect('/login');
+    // Simula éxito y redirige al inicio para respetar el flujo de navegación
+    res.redirect('/home');
 });
 
 module.exports = router;
