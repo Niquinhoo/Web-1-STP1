@@ -1,19 +1,12 @@
-# Integración Mobile - Documentación del Proyecto
+User Story #9
 
-Esta documentación detalla cómo se ha implementado la adaptabilidad móvil (Responsiveness) en la aplicación, asegurando una experiencia óptima en diversos dispositivos y tamaños de pantalla.
+Aca decidí ir armardo el responsive de el proyecto a medida que iba metiendo cambios, ayudado con Claude pude ir generando las pantallas
+mobile de manera casi automatizada mientras iba "picando" codigo manual de las hojas de estilo, lo cual me permitió acortar tiempos y aprovechar a dejar pulida
+la zona de express que es la que resulta nueva para mi:
 
-## 1. Estrategia de Diseño Responsivo
+**Documentacion generada por Claude**
 
-La aplicación sigue una estrategia de **Diseño Adaptativo** utilizando Media Queries de CSS integradas directamente en la arquitectura de **Atomic Design**. En lugar de tener un archivo CSS único para móvil, la responsabilidad de la adaptación se distribuye en cada componente (átomos, moléculas, organismos).
-
-### Meta Viewport
-Para asegurar el correcto renderizado y escalado en dispositivos móviles, se ha incluido la siguiente etiqueta meta en los archivos de layout/template (`home-layout.ejs`, `product-layout.ejs`, `cart-layout.ejs`, `auth-temp.ejs`):
-
-```html
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-```
-
-## 2. Breakpoints Principales
+## 1. Breakpoints Principales
 
 Se utilizan los siguientes puntos de interrupción estándar para adaptar la interfaz:
 

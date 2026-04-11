@@ -3,10 +3,10 @@
 ***Nombre:** Definir enlaces y esquema de navegación*
 
 Realizé el flujo de rutas que fue sugerido desde la cátedera. Solamente me falta agregar el checkout que va a ser de las ultimas
-integraciones que realizaré, de momento le pedí a Claude que me diagrame como quedó el esquema de rutas en el proyecto:
+integraciones que realizaré, de momento le pedí a Codex que me diagrame como quedó el esquema de rutas en el proyecto:
 El esquema lógico de navegación y sus correspondientes escenarios se cumplen en su totalidad. Esto es gracias a la correcta interconexión de las rutas de Express y a los enlaces dispuestos a lo largo de las vistas de EJS, de la siguiente manera:
 
-**Contenido generado por Inteligencia Artificial**
+**Contenido generado por Codex**
 
 1. **🏠Home a 📦Product**:
    En el listado de productos dentro de la vista *Home*, cada componente de tarjeta (`partials/molecules/home/product-card.ejs`) cuenta con una etiqueta de anclaje directa hacia el detalle del producto: `href="/producto/<%= product.id %>"`.
